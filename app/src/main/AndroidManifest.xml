@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Front camera: read by the SmartSpectra SDK on-device, only after in-app consent. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Internet: the SDK checks the API key and loads models from Presage's servers. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Vibrate: optional "Gentle vibration" switch (off by default). Never used unless switched on. -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="true" />
+
+    <!-- Android 11+ package visibility: lets the optional "Voice guidance" find the phone's
+         text-to-speech engine and its voice-download screen. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+        <intent>
+            <action android:name="android.speech.tts.engine.INSTALL_TTS_DATA" />
+        </intent>
+    </queries>
+
+    <!-- allowBackup=false + data_extraction_rules exclude everything: nothing goes to cloud backup
+         or device transfer (the app does not persist anything anyway). -->
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PausaPal">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|uiMode|keyboardHidden|density"
+            android:theme="@style/Theme.PausaPal"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

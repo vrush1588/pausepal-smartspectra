@@ -1,0 +1,50 @@
+# Secrets: holds PRESAGE_API_KEY. Never commit.
+local.properties
+
+# Signing keys and other secrets
+*.jks
+*.keystore
+keystore.properties
+.env
+
+# Gradle / build outputs
+.gradle
+/build
+/app/build
+**/build/
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+/app/release/
+
+# IDE
+*.iml
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/deploymentTargetSelector.xml
+/.idea/appInsightsSettings.xml
+/.idea/deviceManager.xml
+/.idea/studiobot.xml
+.kotlin/
+.DS_Store
+
+# Misc
+*.hprof
+*.log
+.claude/settings.local.json
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+/.idea/.name
+/.idea/AndroidProjectSystem.xml
+/.idea/compiler.xml
+/.idea/gradle.xml
+/.idea/markdown.xml
+/.idea/misc.xml
+/.idea/runConfigurations.xml
+/.idea/vcs.xml

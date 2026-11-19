@@ -1,4 +1,4 @@
-# Pause Pal
+# Pause Pal SmartSpectra
 
 A consent-first study-break buddy for students, developers and learners. Built for the
 **Presage SmartSpectra SDK Challenge**.

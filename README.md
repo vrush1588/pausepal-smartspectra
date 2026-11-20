@@ -9,8 +9,14 @@ baseline**. If your breathing then stays clearly above that baseline, a friendly
 short break with a break tip and an animated breathing circle. It is a wellness helper only:
 no diagnosis, no medical advice.
 
-- DEV post: _TODO: add link_
-- Demo video: _TODO: add link_
+- DEV post: https://dev.to/vrushali_dev_15/pausepal-a-privacy-first-break-buddy-built-with-presage-smartspectra-5ejl
+- Demo video: https://youtu.be/KMcwpqxhjek
+
+## Screenshots
+
+| Consent | Live session | Break nudge | Session summary |
+|---|---|---|---|
+| <img src="images/consent.jpeg" width="200" alt="Consent screen"> | <img src="images/session.jpeg" width="200" alt="Live session screen"> | <img src="images/breaksession.jpeg" width="200" alt="Break nudge sheet"> | <img src="images/session_end.png" width="200" alt="Session summary screen"> |
 
 ## Session flow (5 screens, one Activity)
 
